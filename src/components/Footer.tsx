@@ -12,7 +12,7 @@ function Footer() {
             </div>
              <div className='flex gap-2'>
             <h3><Link href={"/about"}>About Us</Link></h3>
-            <h3><Link href={"/Services"}> Services</Link></h3>
+            <h3><Link href={"/services"}> Services</Link></h3>
             <h3><Link href={"/contact"}>Contact Us</Link></h3>
             <h3><Link href={"/Refund"}>Refund Policy</Link></h3>
             </div> 

@@ -1,32 +1,27 @@
-'use client';
+"use client";
 
-import React, { FormEvent, useState } from 'react';
-import { BackgroundBeams } from '@/components/ui/background-beams';
-import { Button } from '@/components/ui/moving-border';
+import React, { FormEvent, useState } from "react";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import { Button } from "@/components/ui/moving-border";
 
 function MusicSchoolContactUs() {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log('Submitted:', { email, message });
+    console.log("Submitted:", { email, message });
   };
 
   return (
     <div className="h-screen bg-black py-12 pt-36 ">
-      {' '}
+      {" "}
       <BackgroundBeams className=" w-full h-full z-0" />
-      
       <div className="max-w-2xl mx-auto relative z-10">
-        {' '}
+        {" "}
         <h1 className="text-lg md:text-4xl text-center font-sans font-bold mb-8 text-white">
           Contact Us
         </h1>
-        <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center">
-          If you have any questions about our courses we&apos;re here to help.
-        
-        </p>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <input
             type="email"
@@ -44,13 +39,10 @@ function MusicSchoolContactUs() {
             rows={5}
             required
           ></textarea>
-          <div className='flex justify-center'>
-          <Button
-            
-            className="px-6 py-2 rounded-lg bg-cyan-600 text-white font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
-          >
-            Send Message
-          </Button>
+          <div className="flex justify-center">
+            <Button className="px-6 py-2 rounded-lg bg-cyan-600 text-white font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
+              Send Message
+            </Button>
           </div>
         </form>
       </div>
