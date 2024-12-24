@@ -2,6 +2,7 @@ import FeaturedSections from "@/components/FeaturedSection";
 import Herosection from "@/components/HeroSection";
 import InfiniteMarque from "@/components/InfiniteMarque";
 import Skills from "@/components/Skills";
+import Typewriter from "@/components/Typerwriter";
 // import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
     <FeaturedSections/>
     <InfiniteMarque/>
     <Skills/>
+    <Typewriter/>
   </div>
   )
 ;
