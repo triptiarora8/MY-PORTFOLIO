@@ -14,7 +14,7 @@ function MusicSchoolContactUs() {
   };
 
   return (
-    <div className="h-screen bg-black py-12 pt-36 ">
+    <div className="h-screen w-full bg-black py-12 pt-36 ">
       {" "}
       <BackgroundBeams className=" w-full h-full z-0" />
       <div className="max-w-2xl mx-auto relative z-10">

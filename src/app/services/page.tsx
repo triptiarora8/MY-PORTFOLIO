@@ -15,10 +15,12 @@ function page() {
         const displayedProjects = more ? Services : Services.slice(0, 6); 
   return (
     <>
-    <div className='flex flex-col justify-center items-center w-full h-full'>
+    <div className='flex flex-col justify-center items-center w-full h-fit' style={{backgroundColor: "#0C090A"}}>
         <h1 className='text-4xl font-bold pt-[10rem] text-center'>OUR SERVICES</h1>
-        <HoverEffect items={displayedProjects} className='pb-10'/>
-        <Button onClick={handleMore}>{more ? 'Show Less' : 'View More'}</Button>
+        <HoverEffect items={displayedProjects} />
+        <div className='my-10'>
+        <Button onClick={handleMore} >{more ? 'Show Less' : 'View More'}</Button>
+        </div>
         
     </div>
     <Footer/>
