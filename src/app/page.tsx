@@ -1,3 +1,4 @@
+import FAQ from "@/components/FAQ";
 import FeaturedSections from "@/components/FeaturedSection";
 import Herosection from "@/components/HeroSection";
 import InfiniteMarque from "@/components/InfiniteMarque";
@@ -13,6 +14,7 @@ export default function Home() {
     <InfiniteMarque/>
     <Skills/>
     <Typewriter/>
+    <FAQ/>
   </div>
   )
 ;
