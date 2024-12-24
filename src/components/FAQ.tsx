@@ -24,18 +24,18 @@ function FAQ() {
                 {Faq.map((FAQ) => (
                     <div key={FAQ.id} className="w-full border-b px-10 py-4">
                         <div className="flex justify-between items-center">
-                            <h1 className="sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-bold">{FAQ.Title}</h1>
+                            <h1 className="sm:text-lg md:text-xl lg:text-xl xl:text-xl font-bold">{FAQ.Title}</h1>
                             <button
                                 onClick={() => toggleDescription(FAQ.id)}
                                 className="text-sm text-blue-500 hover:text-blue-700 "
                             >
                                 {openFAQ === FAQ.id ? (
-                                    <div className="w-fit h-fit p-[10px] bg-smoke rounded-full">
-                                        <FaMinus className="text-2xl text-purple" />
+                                    <div className="w-fit h-fit p-[10px]  rounded-full">
+                                        <FaMinus className="xl:text-xl sm:text-lg  text-purple" />
                                     </div>
                                 ) : (
-                                    <div className="w-fit h-fit p-[10px] bg-smoke rounded-full">
-                                        <FaPlus className="text-2xl text-dim-gray" />
+                                    <div className="w-fit h-fit p-[10px] rounded-full">
+                                        <FaPlus className="text-xl text-dim-gray" />
                                     </div>
                                 )}
                             </button>
