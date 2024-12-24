@@ -13,10 +13,10 @@ export default function FeaturedSections() {
     const displayedProjects = more ? projects : projects.slice(0, 6); // Show all if 'more' is true, else show the first 3 projects
 
     return (
-        <div className='text-center py-10' style={{ backgroundColor: "#0C090A" }}>
+        <div className='text-center py-10 ' style={{ backgroundColor: "#0C090A" }}>
             <h3 style={{ fontSize: "2rem", fontWeight: "bold", color: "cyan" }}>Featured Courses</h3>
             <h4 style={{ fontSize: "1.5rem", fontWeight: "bold", color: "lightcyan" }}>Learn With Us</h4>
-            <HoverEffect items={displayedProjects} />
+            <HoverEffect items={displayedProjects} className='pb-10'/>
             <Button onClick={handleMore}>{more ? 'Show Less' : 'View More'}</Button>
         </div>
     );
