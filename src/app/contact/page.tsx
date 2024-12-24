@@ -14,7 +14,7 @@ function MusicSchoolContactUs() {
   };
 
   return (
-    <div className="min-h-full bg-black py-12 pt-36 ">
+    <div className="h-screen bg-black py-12 pt-36 ">
       {' '}
       <BackgroundBeams className=" w-full h-full z-0" />
       
@@ -27,20 +27,20 @@ function MusicSchoolContactUs() {
           If you have any questions about our courses we&apos;re here to help.
         
         </p>
-        <form onSubmit={handleSubmit} className="space-y-4 mt-4 sm:w">
+        <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your email address"
-            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500 w-full p-4 bg-neutral-950 placeholder:text-neutral-700"
+            className="rounded-lg border border-neutral-800 focus:ring-2 mx-10 xl:mx-0 focus:ring-teal-500 w-[90%] xl:w-full p-3 bg-neutral-950 placeholder:text-neutral-700"
             required
           />
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Your message"
-            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500 w-full  p-4 bg-neutral-950 placeholder:text-neutral-700"
+            className="rounded-lg border border-neutral-800 mx-10 xl:mx-0 focus:ring-2 focus:ring-teal-500 w-[90%] xl:w-full  p-4 bg-neutral-950 placeholder:text-neutral-700"
             rows={5}
             required
           ></textarea>
