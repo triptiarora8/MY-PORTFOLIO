@@ -1,6 +1,7 @@
 import FeaturedSections from "@/components/FeaturedSection";
 import Herosection from "@/components/HeroSection";
 import InfiniteMarque from "@/components/InfiniteMarque";
+import Skills from "@/components/Skills";
 // import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <Herosection/>
     <FeaturedSections/>
     <InfiniteMarque/>
+    <Skills/>
   </div>
   )
 ;
