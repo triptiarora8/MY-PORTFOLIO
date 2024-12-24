@@ -22,7 +22,7 @@ function Typewritter() {
         },
       ];
   return (
-    <div className="dark  flex justify-center  items-center xl:h-[20rem] lg:h-[20rem] md:h-[20rem] sm:h-[15rem] "   >
+    <div className="dark text-[#0C090A] flex justify-center  items-center xl:h-[20rem] lg:h-[20rem] md:h-[20rem] sm:h-[15rem] sm:pb-10"   >
         <TypewriterEffectSmooth words={words} />
     </div>
   )
